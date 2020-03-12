@@ -1,5 +1,5 @@
 {
-  "name": "@gurumian/simpleplayer",
+  "name": "simpleplayer",
   "version": "0.0.1",
   "description": "Node.js simplemedia MediaPlayer",
   "scripts": {
