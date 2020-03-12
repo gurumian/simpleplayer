@@ -1,7 +1,7 @@
 {
   "name": "simpleplayer",
   "version": "0.0.1",
-  "description": "Node.js simplemedia MediaPlayer",
+  "description": "MediaPlayer using simplemedia ",
   "scripts": {
     "start": "node ./index.js"
   },
