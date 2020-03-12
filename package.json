@@ -1,0 +1,12 @@
+{
+  "name": "@gurumian/simpleplayer",
+  "version": "0.0.0",
+  "description": "Node.js simplemedia MediaPlayer",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "simplemedia": "^0.2.14"
+  }
+}
