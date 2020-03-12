@@ -5,8 +5,7 @@
 var args = process.argv.slice(2);
 console.log('args: ', args);
 
-
-const {Window, MediaPlayer} = require('simplemedia');
+import { Window, MediaPlayer } from "simplemedia";
 
 var uri = 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4'
 if(args.length) {
@@ -48,7 +47,7 @@ function onkeypressed(key) {
     }
     case Event.VK_SPACE: {
       const State = player.State;
-      if(player.state == State.started) {
+      if(player.state == 2) {
         player.pause();
       }
       else {
