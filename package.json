@@ -6,10 +6,10 @@
     "start": "node ./dist/index.js"
   },
   "dependencies": {
-    "simplemedia": "^0.2.14"
+    "simplemedia": "^0.3.3"
   },
   "devDependencies": {
-    "@types/node": "^13.9.0",
+    "@types/node": "^13.9.1",
     "chai": "^4.2.0",
     "cmake-js": "^6.0.0",
     "mocha": "^7.0.1",

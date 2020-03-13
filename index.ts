@@ -5,24 +5,24 @@
 var args = process.argv.slice(2);
 console.log('args: ', args);
 
-import { Window, MediaPlayer } from "simplemedia";
+import { Window, MediaPlayer, State } from "simplemedia";
 
 var uri = 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4'
 if(args.length) {
   uri = args[0];
 }
 
-const Event = Object.freeze({
-  'quit':256,
-  'keyPressed':768,
-  'keyReleased':769,
-  'VK_RIGHT':1073741903,
-  'VK_LEFT':1073741904,
-  'VK_DOWN':1073741905,
-  'VK_UP': 1073741906,
-  'VK_SPACE':32,
-  'VK_ENTER':13,
-});
+enum Event {
+  quit = 256,
+  keyPressed = 768,
+  keyReleased = 769,
+  VK_RIGHT = 1073741903,
+  VK_LEFT = 1073741904,
+  VK_DOWN = 1073741905,
+  VK_UP = 1073741906,
+  VK_SPACE = 32,
+  VK_ENTER = 13,
+}
 
 function onkeypressed(key) {
   switch(key) {
@@ -46,8 +46,7 @@ function onkeypressed(key) {
       break;
     }
     case Event.VK_SPACE: {
-      const State = player.State;
-      if(player.state == 2) {
+      if(player.state == State.started) {
         player.pause();
       }
       else {
